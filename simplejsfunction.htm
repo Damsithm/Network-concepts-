@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function toggletext() {
+	var mytext = "";
+	if (document.getElementById("demo").innerHTML == "Hello JavaScript!") {
+		mytext = "JavaScript can change HTML content.";
+	} else {
+		mytext = "Hello JavaScript!";
+	}
+	document.getElementById("demo").innerHTML = mytext;
+}
+</script>
+</head>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick="toggletext()">Click Me!</button>
+<p style="font-size: 1em">Code influenced by <a href="https://www.w3schools.com/" target="_blank">w3schools</a></p>
+</body>
+</html>
